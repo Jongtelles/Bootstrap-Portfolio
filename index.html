@@ -12,53 +12,67 @@
 </head>
 
 <body>
-    <div class="container">
-
-        <nav class="navbar fix-top navbar-expand-lg navbar-light bg-light justify-content-between">
-            <a class="navbar-brand">
+    <!-- fixed nav bar -->
+    <nav class="navbar fix-top navbar-expand-lg navbar-light bg-light justify-content-between">
+        <div class="container">
+            <a id="myName" class="navbar-brand p-4 ml-5">
                 <h1>Jon Telles</h1>
             </a>
-            <div class="navbar-nav mr-sm-2">
-                <a class="nav-item nav-link" href="./index.html">About</a>
+            <div class="navbar-nav mr-2">
+                <a class="nav-item nav-link disabled" href="./index.html">About</a>
                 <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
                 <a class="nav-item nav-link" href="./contact.html">Contact</a>
             </div>
-    </div>
+        </div>
     </nav>
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-8 p-4 mt-5 aboutMe">
-                <div class="media">
-                    <img class="align-self-start mr-3" src="./assets/images/headshot.jpg" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h3 class="mt-0">About Me</h3>
-                        <hr>
-                        <p>I grew up in beautiful sunny San Diego and lived there for most of life before briefly moving to
-                            Dallas, Texas, meeting my wife, and eventually following her to Washington, DC.
-                            <br>
-                            <br> I'm a life-long lover of computers and technology and at the beginning of 2018 I resolved to
-                            learn how to code and become a developer. I hope to combine my web development skills with my
-                            previous experience in customer service and management roles to be a full-time developer after
-                            completing my bootcamp.
-                            <br>
-                            <br> I love dogs, coffee, cooking, reading, and video games.
-                        </p>
+    <!-- background image -->
+    <div class="bg">
+        <!-- main content area -->
+        <div class="container">
+            <div class="row justify-content-around">
+                <!-- about me -->
+                <div class="col-8 p-4 mt-5 aboutMe">
+                    <div class="media">
+                        <img class="align-self-start mr-3" src="./assets/images/headshot.jpg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h3 class="mt-0">About Me</h3>
+                            <hr>
+                            <p>I grew up in beautiful sunny San Diego and lived there for most of life before briefly moving
+                                to Dallas, Texas, meeting my wife, and eventually following her to Washington, DC.
+                                <br>
+                                <br> I'm a life-long lover of computers and technology and at the beginning of 2018 I resolved
+                                to learn how to code and become a developer. I hope to combine my web development skills
+                                with my previous experience in customer service and management roles to be a full-time developer
+                                after completing my bootcamp.
+                                <br>
+                                <br> I love dogs, coffee, cooking, reading, and video games.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <!-- social sidebar -->
+                <div class="col-4 p-4 mt-5 sidebar">
+                    <h3 class="mt-0"> Connect with me </h3>
+                    <hr>
+                    <a href="https://github.com/Jongtelles" target="_blank">
+                        <img src="./assets/images/github-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jongtelles/" target="_blank">
+                        <img src="./assets/images/linkedin-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <a href="https://stackoverflow.com/users/9190290/jon-gt?tab=profile" target="_blank">
+                        <img src="./assets/images/stackoverflow-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-4 p-4 mt-5 sidebar">
-                <h3 class="mt-0"> Sidebar</h3>
-                <hr>
+        </div>
+        <!-- footer  -->
+        <div id="footer" class="mt-5">
+            <div class="container p-4">
+                <p class="footer-block">Copyright © 2018 Jon Telles</p>
             </div>
         </div>
     </div>
-    <!--[ footer ] -->
-    <div id="footer" class="mt-5">
-        <div class="container p-4">
-            <p class="footer-block">Copyright © 2018 Jon Telles</p>
-        </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
