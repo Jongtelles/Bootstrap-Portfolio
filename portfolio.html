@@ -15,72 +15,85 @@
     <!-- fixed nav bar -->
     <nav class="navbar fix-top navbar-expand-lg navbar-light bg-light justify-content-between">
         <div class="container">
-            <a class="navbar-brand p-4 ml-5">
+            <a id="myName" class="navbar-brand p-4 ml-5">
                 <h1>Jon Telles</h1>
             </a>
-            <div class="navbar-nav mr-sm-2">
+            <div class="navbar-nav mr-2">
                 <a class="nav-item nav-link" href="./index.html">About</a>
                 <a class="nav-item nav-link disabled" href="./portfolio.html">Portfolio</a>
                 <a class="nav-item nav-link" href="./contact.html">Contact</a>
             </div>
         </div>
     </nav>
-    <!-- main content area -->
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-8 p-4 mt-5 gallery">
-                <div class="row">
-                    <!-- <div class="col-md-6 p-4"> -->
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assets/images/hangman.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-text">Hangman</h4>
+    <!-- background image -->
+    <div class="bg">
+        <!-- main content area -->
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- gallery -->
+                <div class="col-xs-12 col-sm-12 col-md-7 mt-5 gallery">
+                    <h3 class="mt-4">Portfolio</h3>
+                    <hr>
+                    <div class="row justify-content-around">
+                        <div class="card text-center">
+                            <img class="card-img-top img-fluid" src="./assets/images/hangman.jpg" alt="portfolio hangman">
+                            <div class="card-body">
+                                <h4 class="card-text">Hangman</h4>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <img class="card-img-top img-fluid" src="./assets/images/rpg-game.jpg" alt="portfolio rpg game">
+                            <div class="card-body">
+                                <h4 class="card-text">RPG Game</h4>
+                            </div>
                         </div>
                     </div>
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assets/images/hangman.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-text">Hangman</h4>
+                    <div class="row mt-4 justify-content-around">
+                        <div class="card text-center">
+                            <img class="card-img-top img-fluid" src="./assets/images/trivia-game.jpg" alt="portfolio trivia game">
+                            <div class="card-body">
+                                <h4 class="card-text">Trivia Game</h4>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <img class="card-img-top img-fluid" src="./assets/images/rutgers-info-widget.jpg" alt="portfolio rutgers info widget">
+                            <div class="card-body">
+                                <h4 class="card-text">Rutgers Info Widget</h4>
+                            </div>
                         </div>
                     </div>
-                    <!-- </div> -->
+                    <div class="row mt-4 mb-4 justify-content-around">
+                        <div class="card text-center img-fluid">
+                            <img class="card-img-top" src="./assets/images/rock-paper-scissors.jpg" alt="portfolio rock paper scissors">
+                            <div class="card-body">
+                                <h4 class="card-text">Rock Paper Scissors</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assets/images/hangman.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-text">Hangman</h4>
-                        </div>
-                    </div>
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assets/images/hangman.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-text">Hangman</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assets/images/hangman.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-text">Hangman</h4>
-                        </div>
-                    </div>
+                <!-- social sidebar -->
+                <div class="col-xs-12 col-sm-12 col-md-3 p-4 mt-5 sidebar">
+                    <h3 class="mt-0"> Connect with me </h3>
+                    <hr>
+                    <a href="https://github.com/Jongtelles" target="_blank">
+                        <img src="./assets/images/github-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jongtelles/" target="_blank">
+                        <img src="./assets/images/linkedin-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <a href="https://stackoverflow.com/users/9190290/jon-gt?tab=profile" target="_blank">
+                        <img src="./assets/images/stackoverflow-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
                 </div>
             </div>
-            <div class="col-md-4 p-4 mt-5 sidebar">
-                <h3 class="mt-0"> Sidebar</h3>
-                <hr>
+        </div>
+        <!-- footer  -->
+        <div id="footer" class="mt-5">
+            <div class="container p-4">
+                <p class="footer-block">Copyright © 2018 Jon Telles</p>
             </div>
         </div>
     </div>
-    <!--[ footer ] -->
-    <div id="footer" class="mt-5">
-        <div class="container p-4">
-            <p class="footer-block">Copyright © 2018 Jon Telles</p>
-        </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

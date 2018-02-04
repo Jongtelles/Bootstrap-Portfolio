@@ -15,33 +15,91 @@
     <!-- fixed nav bar -->
     <nav class="navbar fix-top navbar-expand-lg navbar-light bg-light justify-content-between">
         <div class="container">
-            <a class="navbar-brand h-100 p-4 ml-5">
+            <a id="myName" class="navbar-brand p-4 ml-5">
                 <h1>Jon Telles</h1>
             </a>
-            <div class="navbar-nav mr-sm-2">
+            <div class="navbar-nav mr-2">
                 <a class="nav-item nav-link" href="./index.html">About</a>
                 <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
                 <a class="nav-item nav-link disabled" href="./contact.html">Contact</a>
             </div>
         </div>
     </nav>
-    <!-- main content area -->
-    <div class="container">
-        <div class="row justify-content-between">
+    <!-- background image -->
+    <div class="bg">
+        <!-- main content area -->
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- contact form -->
+                <div class="col-xs-12 col-sm-12 col-md-7 p-4 mt-5 contactForm">
+                    <h3 class="mt-2">Contact</h3>
+                    <hr>
+                    <form id="contact-form" method="post" action="contact.php" role="form">
 
-            <div class="col-md-4 p-4 mt-5 sidebar">
-                <h3 class="mt-0"> Sidebar</h3>
-                <hr>
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="form_name">Name *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
+                                            data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"
+                                            data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <p>*required</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-send" value="Send message">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- social sidebar -->
+                <div class="col-xs-12 col-sm-12 col-md-3 p-4 mt-5 sidebar">
+                    <h3 class="mt-0"> Connect with me </h3>
+                    <hr>
+                    <a href="https://github.com/Jongtelles" target="_blank">
+                        <img src="./assets/images/github-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jongtelles/" target="_blank">
+                        <img src="./assets/images/linkedin-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <a href="https://stackoverflow.com/users/9190290/jon-gt?tab=profile" target="_blank">
+                        <img src="./assets/images/stackoverflow-icon.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer  -->
+        <div id="footer" class="mt-5">
+            <div class="container p-4">
+                <p class="footer-block">Copyright © 2018 Jon Telles</p>
             </div>
         </div>
     </div>
-    <!--[ footer ] -->
-    <div id="footer" class="mt-5">
-        <div class="container p-4">
-            <p class="footer-block">Copyright © 2018 Jon Telles</p>
-        </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
