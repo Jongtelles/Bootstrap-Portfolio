@@ -82,3 +82,6 @@ body {
 a {
     text-decoration: none !important;
 }
+.navbar{
+    padding: 0px;
+}
